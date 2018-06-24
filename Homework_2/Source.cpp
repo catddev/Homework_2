@@ -11,7 +11,6 @@ using namespace std;
 void main()
 {
 	srand(time(NULL));
-
 	setlocale(LC_ALL, "Rus");
 
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
