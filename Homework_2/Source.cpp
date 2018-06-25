@@ -27,16 +27,13 @@ start:
 	{
 	case 1:
 	{
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i <= 10; i++)
 		{
-			for (int j = 10; j > 0; j--)
+			for (int j = 0; j <= 10; j++)
 			{
-				if (i == 0 && (j < 10 && j>1)) cout << "*";
-				if (i < j) cout << " ";
-				else cout << " *";
-				if (j == 10) cout << "*";
-
-				if (j == 1) cout << endl;
+				if (j > i) cout << "*";
+				else cout << " ";
+				if (j == 10) cout << endl;
 			}
 		}
 		cout << endl;
@@ -44,7 +41,15 @@ start:
 	break;
 	case 2:
 	{
-
+		for (int i = 0; i <= 10; i++)
+		{
+			for (int j = 10; j >= 0; j--)
+			{
+				if (j < i) cout << "*";
+				if (j == 0) cout << endl;
+			}
+		}
+		cout << endl;
 	}
 	break;
 	case 3:
@@ -79,12 +84,31 @@ start:
 	break;
 	case 9:
 	{
+		for (int i = 0; i <= 10; i++)
+		{
+			for (int j = 10; j >= 0; j--)
+			{
 
+				if (i < j) cout << "*";
+				if (j == 0) cout << endl;
+			}
+		}
+		cout << endl;
 	}
 	break;
 	case 10:
 	{
+		for (int i = 0; i <= 10; i++)
+		{
+			for (int j = 10; j >= 0; j--)
+			{
 
+				if (i < j) cout << " ";
+				else cout << "*";
+				if (j == 0) cout << endl;
+			}
+		}
+		cout << endl;
 	}
 	break;
 	default:
